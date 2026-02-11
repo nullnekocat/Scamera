@@ -108,4 +108,21 @@ body {
     transform: translateY(-3px); /* leve levantamiento */
 }
 
+@media (max-width: 768px) {
+    body {
+        background-size: 100px;
+        background-position:
+            top 50px left -20px,
+            bottom 40px right -20px;
+    }
+
+    .modal-content {
+        background-size: 90px;
+        background-position:
+            top 60px right -20px,
+            bottom -20px left -20px;
+    }
+}
+
+
 
