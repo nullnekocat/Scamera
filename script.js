@@ -630,70 +630,70 @@ const Scamera = {
                 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-green rounded-4 d-flex flex-column align-items-center mt-1" style="width:270px; height:230px;">
-                        <p class="mt-2 fw-bold">Partido</p>
+                        <p class="mt-2 fw-bold">Máximo goleador</p>
                         ${s.partidos.slice(0, 1).map(p => `
-                            <div class="bg-lgreen rounded-5 d-flex align-items-center justify-content-center my-2 fw-bold" style="width:110px; height:40px;">${p.equipoA}</div>
-                            <p class="fw-bold my-2">VS</p>
-                            <div class="bg-lgreen rounded-5 d-flex align-items-center justify-content-center fw-bold" style="width:110px; height:40px;">${p.equipoB}</div>
+                            <div class="fs-4 my-2 fw-bold" >${p.jugadorA}</div>
+                            <div class="fs-4 my-2 fw-bold" >${p.golesA}</div>
                         `).join('')}
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center mt-1" style="width:270px; height:200px;">
-                        <p class="mt-2 green-font fs-4">Marcador</p>
-                        <p class="fs-1 fw-bold my-auto">${s.partidos[0]?.golesA || 0} - ${s.partidos[0]?.golesB || 0}</p>
+                        <p class="mt-2 green-font fs-4">2° Máximo goleador</p>
+                        <p class="fs-4 fw-bold my-auto">${s.partidos[0]?.jugadorB || 0}</p>
+                        <p class="fs-4 fw-bold my-auto">${s.partidos[0]?.golesB || 0}</p>
+                        
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center mt-1" style="width:270px; height:200px;">
-                        <p class="mt-2 green-font fs-4">Tiempo</p>
-                        <p class="fs-2 fw-bold my-auto">${s.partidos[0]?.tiempo || '90:00'}</p>
+                        <p class="mt-2 green-font fs-4">Más apariciones</p>
+                        <p class="fs-4 fw-bold my-auto">${s.partidos[0]?.topAp}</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center" style="width:270px; height:300px;">
-                        <p class="mt-2 green-font fs-4">Tiros a puerta</p>
-                        <p class="fs-2 fw-bold my-4">Local: ${s.tirosPuerta.local}</p>
-                        <p class="fs-2 fw-bold my-4">Rival: ${s.tirosPuerta.rival}</p>
+                        <p class="mt-2 green-font fs-4">Muchas apariciones</p>
+                        <p class="fs-4 fw-bold my-4"> ${s.variasAp.apA}</p>
+                        <p class="fs-4 fw-bold my-4"> ${s.variasAp.apB}</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center" style="width:270px; height:300px;">
-                        <p class="mt-2 green-font fs-4">Faltas</p>
-                        <p class="fs-2 fw-bold my-4">Local: ${s.faltas.local}</p>
-                        <p class="fs-2 fw-bold my-4">Rival: ${s.faltas.rival}</p>
+                        <p class="mt-2 green-font fs-4">Títulos importantes</p>
+                        <p class="fs-4 fw-bold my-4">${s.titulo.uno}</p>
+                        <p class="fs-4 fw-bold my-4">${s.titulo.dos}</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center" style="width:260px; height:330px;">
-                        <p class="mt-2 green-font fs-4">Tarjetas</p>
-                        <div class="bg-green rounded-5 px-3 py-1 mt-1 text-white">AMARILLAS</div>
-                        <p class="fs-6 fw-bold my-2">Local: ${s.tarjetas.amarillas.local}</p>
-                        <p class="fs-6 fw-bold my-2">Rival: ${s.tarjetas.amarillas.rival}</p>
-                        <div class="bg-green rounded-5 px-3 py-1 mt-1 text-white">ROJAS</div>
-                        <p class="fs-6 fw-bold my-2">Local: ${s.tarjetas.rojas.local}</p>
-                        <p class="fs-6 fw-bold my-2">Rival: ${s.tarjetas.rojas.rival}</p>
+                        <p class="mt-2 green-font fs-5">Rachas consecutivas</p>
+                        <div class="bg-green rounded-5 px-3 py-1 mt-1 text-white">Victorias</div>
+                        <p class="fs-4 fw-bold my-2">${s.racha.victorias.local}</p>
+                        <div class="bg-green rounded-5 px-3 py-1 mt-1 text-white">Período</div>
+                        <p class="fs-4 fw-bold my-2"> ${s.racha.year.local}</p>
+                        
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center mb-4">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center" style="width:270px; height:200px;">
-                        <p class="mt-2 green-font fs-4">Saques de esquina</p>
-                        <p class="fs-3 fw-bold my-2">Local: ${s.saquesEsquina.local}</p>
-                        <p class="fs-3 fw-bold my-2">Rival: ${s.saquesEsquina.rival}</p>
+                        <p class="mt-2 green-font fs-4">Mayor victoria</p>
+                        <p class="fs-4 fw-bold my-2">Marcador: ${s.victoria.marcador}</p>
+                        <p class="fs-4 fw-bold my-2">Año: ${s.victoria.year}</p>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-4 d-flex justify-content-center">
                     <div class="bg-light rounded-4 d-flex flex-column align-items-center mb-4" style="width:270px; height:200px;">
-                        <p class="mt-2 green-font fs-4">Cambios</p>
-                        <p class="fs-3 fw-bold my-2">Local: ${s.cambios.local}</p>
-                        <p class="fs-3 fw-bold my-2">Rival: ${s.cambios.rival}</p>
+                        <p class="mt-2 green-font fs-5">Clasificación mundial</p>
+                        <p class="fs-5 fw-bold my-2 text-center">Tipo: ${s.mundialData.data}</p>
+                        <p class="fs-5 fw-bold my-2">Partidos: ${s.mundialData.partidos}</p>
                     </div>
                 </div>
             </div>

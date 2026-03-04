@@ -203,17 +203,17 @@
       "saquesEsquina": {"local": 12, "rival": 8},
       "cambios": {"local": "3/5", "rival": "4/5"}
     },
-    "espana": {
+    "espana":{
       "partidos": [
-        {"equipoA": "España", "equipoB": "Costa Rica", "golesA": 7, "golesB": 0, "tiempo": "90:00"},
+        {"jugadorA": "David Villa", "golesA": "59 goles", "jugadorB": "Raúl González", "golesB": "44 goles", "topAp": "Sergio Ramos"},
         {"equipoA": "España", "equipoB": "Alemania", "golesA": 1, "golesB": 1, "tiempo": "90:00"},
         {"equipoA": "España", "equipoB": "Japón", "golesA": 1, "golesB": 2, "tiempo": "90:00"}
       ],
-      "tirosPuerta": {"local": 22, "rival": 10},
-      "faltas": {"local": 12, "rival": 15},
-      "tarjetas": {"amarillas": {"local": 2, "rival": 4}, "rojas": {"local": 0, "rival": 0}},
-      "saquesEsquina": {"local": 18, "rival": 5},
-      "cambios": {"local": "5/5", "rival": "3/5"}
+      "variasAp": {"apA": "Iker Casillas", "apB": "Sergio Busquets"},
+      "titulo": {"uno": "Copa Mundial FIFA", "dos": "Eurocopa"},
+      "racha": {"victorias": {"local": "15", "rival": "."}, "year": {"local": "2008-2009", "rival": "."}},
+      "victoria": {"marcador": "13-0", "year": "1933"},
+      "mundialData": {"data": "Eliminatorias mundialistas", "partidos": "49"}
     },
     "uruguay": {
       "partidos": [
