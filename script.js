@@ -903,6 +903,34 @@ const Scamera = {
     }
 };
 
+
+let isPaused = false;
+
+document.querySelector('.country-info-buttons button').addEventListener('click', () => {
+
+    // Obtener todos los modelos
+    const modelos = document.querySelectorAll('.modelo-ar');
+
+    modelos.forEach(modelo => {
+        if (modelo.getAttribute('visible')) {
+
+            const mixer = modelo.components['animation-mixer'];
+
+            if (!mixer) return;
+
+            if (isPaused) {
+                // Reanudar
+                mixer.play();
+            } else {
+                // Pausar
+                mixer.pause();
+            }
+        }
+    });
+
+    isPaused = !isPaused;
+});
+
 // Inicializar cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', () => {
     console.log("📄 DOM cargado, iniciando Scamera...");
