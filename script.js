@@ -253,6 +253,15 @@ const Scamera = {
                 if (modelElement) {
                     modelElement.setAttribute('visible', 'true');
                     console.log(`✅ Modelo ${modelId} mostrado para ${country}`);
+                    // ✨ chispas mágicas
+                    const sparkles = this.createMagicSparkles(modelElement);
+
+                    sparkles.setAttribute("visible", true);
+
+                    setTimeout(()=>{
+                        sparkles.setAttribute("visible", false);
+                    }, 1600);
+
                     const startAnimation = () => {
                     modelElement.removeAttribute('animation-mixer');
 
@@ -289,63 +298,146 @@ const Scamera = {
         });
     },
 
-    showCountryInfo(country) {
-        const countryData = this.data[country];
-        if (!countryData) return;
+       createMagicSparkles(modelElement){
+            // eliminar partículas anteriores si existen
+            const oldSparkles = modelElement.parentElement.querySelector(".sparkles-ar");
 
-        const infoCard = document.getElementById('country-info');
-        const nameEl = document.getElementById('country-name');
-        const descEl = document.getElementById('country-description');
+            if(oldSparkles){
+                oldSparkles.remove();
+            }
 
-        if (infoCard && nameEl && descEl) {
-            nameEl.textContent = countryData.titulo || this.countryConfig[country]?.name || country;
-            descEl.textContent = countryData.descripcion || '';
-            infoCard.classList.remove('hidden');
-            infoCard.classList.add('visible');
-        }
-    },
+            const sparkleContainer = document.createElement("a-entity");
+            sparkleContainer.classList.add("sparkles-ar");
 
-    hideCountryInfo() {
-        const infoCard = document.getElementById('country-info');
-        if (infoCard) {
-            infoCard.classList.add('hidden');
-            infoCard.classList.remove('visible');
-        }
-    },
+            // posición desde donde nace la luz
+            sparkleContainer.setAttribute("position", "0 -0.4 0");
+            for(let i=0; i<18; i++){
 
-    startScanner() {
-        const scene = document.querySelector('a-scene');
-        if (!scene) {
-            console.error("❌ No se encontró la escena A-Frame");
-            return;
-        }
+                const sparkle = document.createElement("a-sphere");
 
-        console.log("📷 Iniciando escáner...");
-        
-        // Obtener el sistema MindAR y arrancarlo
-        const mindarSystem = scene.systems['mindar-image-system'];
-        if (mindarSystem) {
-            if (!mindarSystem.active) {
-                try {
-                    mindarSystem.start();
-                    this.isScanning = true;
-                    this.updateStatus("Escaneando... Busca un escudo");
-                    this.showNotification("📷 Cámara activada");
-                    
-                    document.getElementById('btn-iniciar').disabled = true;
-                    document.getElementById('btn-detener').disabled = false;
-                } catch (error) {
-                    console.error("❌ Error al iniciar MindAR:", error);
-                    this.showNotification("❌ Error al iniciar la cámara");
+                sparkle.setAttribute("radius","0.045");
+
+                sparkle.setAttribute("color",
+                    ["#fff7b0","#ffe066","#ffd700","#fff2a8","#ffffff"][Math.floor(Math.random()*5)]
+                );
+
+                sparkle.setAttribute(
+                    "material",
+                    "emissive:#ffd700; emissiveIntensity:2; transparent:true; opacity:0.95"
+                );
+
+                // posición inicial concentrada
+                sparkle.setAttribute("position",
+                    `${(Math.random()-0.5)*0.25} ${Math.random()*0.1} ${(Math.random()-0.5)*0.25}`
+                );
+
+                // movimiento hacia arriba tipo invocación
+                sparkle.setAttribute("animation__float",`
+                    property: position;
+                    to: ${(Math.random()-0.5)*0.6} ${1.2 + Math.random()*0.3} ${(Math.random()-0.5)*0.6};
+                    dur: ${1600 + Math.random()*900};
+                    easing: easeOutCubic;
+                `);
+
+                sparkle.setAttribute("animation__fade",`
+                    property: material.opacity;
+                    from: 1;
+                    to: 0;
+                    dur: 1700;
+                `);
+
+                sparkle.setAttribute("animation__scale",`
+                    property: scale;
+                    from: 0.3 0.3 0.3;
+                    to: 1.3 1.3 1.3;
+                    dur: 1700;
+                `);
+
+                sparkleContainer.appendChild(sparkle);
+            }
+
+
+            // círculo de luz en el piso
+            const glow = document.createElement("a-circle");
+            glow.setAttribute("radius","0.6");
+            glow.setAttribute("rotation","-90 0 0");
+            glow.setAttribute("position","0 -0.3 0");
+            glow.setAttribute("material",
+            "color:#ffd700; opacity:0.35; transparent:true");
+
+            glow.setAttribute("animation",`
+            property: scale;
+            from: 0.2 0.2 0.2;
+            to: 1.6 1.6 1.6;
+            dur: 1200;
+            easing: easeOutQuad;
+            `);
+
+            sparkleContainer.appendChild(glow);
+
+
+            modelElement.parentElement.appendChild(sparkleContainer);
+
+            return sparkleContainer;
+        },
+
+        showCountryInfo(country) {
+            const countryData = this.data[country];
+            if (!countryData) return;
+
+            const infoCard = document.getElementById('country-info');
+            const nameEl = document.getElementById('country-name');
+            const descEl = document.getElementById('country-description');
+
+            if (infoCard && nameEl && descEl) {
+                nameEl.textContent = countryData.titulo || this.countryConfig[country]?.name || country;
+                descEl.textContent = countryData.descripcion || '';
+                infoCard.classList.remove('hidden');
+                infoCard.classList.add('visible');
+            }
+        },
+
+        hideCountryInfo() {
+            const infoCard = document.getElementById('country-info');
+            if (infoCard) {
+                infoCard.classList.add('hidden');
+                infoCard.classList.remove('visible');
+            }
+        },
+
+        startScanner() {
+            const scene = document.querySelector('a-scene');
+            if (!scene) {
+                console.error("❌ No se encontró la escena A-Frame");
+                return;
+            }
+
+            console.log("📷 Iniciando escáner...");
+            
+            // Obtener el sistema MindAR y arrancarlo
+            const mindarSystem = scene.systems['mindar-image-system'];
+            if (mindarSystem) {
+                if (!mindarSystem.active) {
+                    try {
+                        mindarSystem.start();
+                        this.isScanning = true;
+                        this.updateStatus("Escaneando... Busca un escudo");
+                        this.showNotification("📷 Cámara activada");
+                        
+                        document.getElementById('btn-iniciar').disabled = true;
+                        document.getElementById('btn-detener').disabled = false;
+                    } catch (error) {
+                        console.error("❌ Error al iniciar MindAR:", error);
+                        this.showNotification("❌ Error al iniciar la cámara");
+                    }
+                } else {
+                    console.log("ℹ️ El escáner ya está activo");
                 }
             } else {
-                console.log("ℹ️ El escáner ya está activo");
+                console.error("❌ Sistema MindAR no encontrado");
+                this.showNotification("❌ Sistema AR no disponible");
             }
-        } else {
-            console.error("❌ Sistema MindAR no encontrado");
-            this.showNotification("❌ Sistema AR no disponible");
-        }
-    },
+        },
 
     stopScanner() {
         const scene = document.querySelector('a-scene');
@@ -908,6 +1000,7 @@ const Scamera = {
 
 
 let isPaused = false;
+
 
 document.querySelector('.country-info-buttons button').addEventListener('click', () => {
 
