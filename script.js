@@ -20,7 +20,7 @@ const Scamera = {
         'colombia': { 
             name: 'Colombia', 
             modelFile: 'tucanCol.glb', 
-            animName: 'tucanMove',
+            animName: 'Take 01',
             indices: [0, 1, 2],
             modelIds: ['modelo-ar-colombia-0', 'modelo-ar-colombia-1', 'modelo-ar-colombia-2'],
             video: 'Colombia.mp4'
@@ -649,7 +649,31 @@ const Scamera = {
         }
 
         const dataCountry = this.currentCountry;
-        const triviaData = this.data.trivia?.[dataCountry];
+        
+        let triviaData = this.data.trivia?.[dataCountry];
+        if (!triviaData || triviaData.length === 0) {
+            container.innerHTML = '<p class="text-center">No hay trivia disponible para este país</p>';
+            return;
+        }
+        // RANDOMIZAR
+        triviaData = [...triviaData]; 
+        for (let i = triviaData.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [triviaData[i], triviaData[j]] = [triviaData[j], triviaData[i]];
+        }
+        triviaData = triviaData.slice(0, 5);
+        // RANDOM RESPUESTAS
+        triviaData = triviaData.map(q => {
+            const opciones = [...q.opciones];
+
+            for (let i = opciones.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [opciones[i], opciones[j]] = [opciones[j], opciones[i]];
+            }
+
+            return { ...q, opciones };
+        });
+
         if (!triviaData || triviaData.length === 0) {
             container.innerHTML = '<p class="text-center">No hay trivia disponible para este país</p>';
             return;
