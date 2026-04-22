@@ -656,12 +656,49 @@ const Scamera = {
             return;
         }
         // RANDOMIZAR
-        triviaData = [...triviaData]; 
-        for (let i = triviaData.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [triviaData[i], triviaData[j]] = [triviaData[j], triviaData[i]];
-        }
-        triviaData = triviaData.slice(0, 5);
+        // 🧠 inicializar historial si no existe
+if (!this.usedQuestions) {
+    this.usedQuestions = {};
+}
+
+if (!this.usedQuestions[dataCountry]) {
+    this.usedQuestions[dataCountry] = [];
+}
+
+// 🔹 agregar índice a preguntas
+let preguntasConIndex = triviaData.map((q, i) => ({
+    ...q,
+    _index: i
+}));
+
+// 🔹 filtrar las que NO han salido antes
+let disponibles = preguntasConIndex.filter(
+    q => !this.usedQuestions[dataCountry].includes(q._index)
+);
+
+// 🔁 si ya no hay suficientes, reiniciar historial
+if (disponibles.length < 5) {
+    this.usedQuestions[dataCountry] = [];
+    disponibles = preguntasConIndex;
+}
+
+// 🔀 mezclar
+for (let i = disponibles.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [disponibles[i], disponibles[j]] = [disponibles[j], disponibles[i]];
+}
+
+// ✂️ tomar 5
+let seleccionadas = disponibles.slice(0, 5);
+
+// 🧠 guardar usadas
+this.usedQuestions[dataCountry].push(
+    ...seleccionadas.map(q => q._index)
+);
+
+// limpiar _index
+triviaData = seleccionadas.map(({ _index, ...q }) => q);
+
         // RANDOM RESPUESTAS
         triviaData = triviaData.map(q => {
             const opciones = [...q.opciones];
