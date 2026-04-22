@@ -59,7 +59,7 @@
     "titulo": "Selección de Colombia",
     "descripción": "Colombia, 'Los Cafeteros', es conocida por su talento ofensivo y ha participado en 6 mundiales.",
     "modelo": "tucanCol.glb",
-    "animacion": "tucanMove",
+    "animacion": "Take 01",
     "tradicion": "Colombia es uno de los países más ricos en biodiversidad del planeta. Aunque su tamaño geográfico es intermedio, alberga una enorme variedad de ecosistemas —desde selvas amazónicas hasta páramos andinos y costas caribeñas— que le permiten hospedar cerca del 10 % de todas las especies del mundo. El país lidera el ranking global en número de aves, mariposas y orquídeas, y ocupa puestos destacados en anfibios, peces, reptiles y mamíferos. Esta riqueza biológica convierte a Colombia en un laboratorio natural vivo, donde la naturaleza mantiene un equilibrio dinámico y diverso que sigue asombrando a científicos, conservacionistas y visitantes por igual.",
     "futbol": "El fútbol es uno de los deportes líderes en Colombia, con amplia popularidad y una fuerte afición en todo el país. La selección nacional ha tenido presencia destacada en varias ediciones de la Copa Mundial de la FIFA, con actuaciones memorables que han elevado su perfil internacional. Figuras como Carlos Valderrama, Faustino Asprilla, James Rodríguez y Radamel Falcao han dejado huella en la memoria futbolística, llevando el estilo colombiano de juego rápido y técnico a escenarios globales. Aunque aún busca su primer título mundial, Colombia ha generado momentos icónicos en la historia de los mundiales y mantiene una pasión futbolística vibrante."
   },
@@ -99,6 +99,159 @@
           {"texto": "Hugo Sánchez", "correcta": false},
           {"texto": "Luis Hernández", "correcta": false}
         ]
+      },
+      {
+        "pregunta": "¿Qué selección eliminó a México en el Mundial 2014 en octavos?",
+        "opciones": [
+          {"texto": "Países Bajos", "correcta": true},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "Alemania", "correcta": false},
+          {"texto": "Argentina", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color predomina en el uniforme local de México?",
+        "opciones": [
+          {"texto": "Verde", "correcta": true},
+          {"texto": "Rojo", "correcta": false},
+          {"texto": "Azul", "correcta": false},
+          {"texto": "Blanco", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué pirámide famosa se encuentra en Teotihuacán?",
+        "opciones": [
+          {"texto": "Pirámide del Sol", "correcta": true},
+          {"texto": "Chichén Itzá", "correcta": false},
+          {"texto": "Templo Mayor", "correcta": false},
+          {"texto": "Monte Albán", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Quién es conocido como el 'Príncipe de la Canción'?",
+        "opciones": [
+          {"texto": "José José", "correcta": true},
+          {"texto": "Luis Miguel", "correcta": false},
+          {"texto": "Juan Gabriel", "correcta": false},
+          {"texto": "Pedro Infante", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo de selecciones ganó México en 1999?",
+        "opciones": [
+          {"texto": "Copa Confederaciones", "correcta": true},
+          {"texto": "Copa América", "correcta": false},
+          {"texto": "Copa Oro", "correcta": false},
+          {"texto": "Nations League", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué instrumento es típico del mariachi?",
+        "opciones": [
+          {"texto": "Guitarrón", "correcta": true},
+          {"texto": "Piano", "correcta": false},
+          {"texto": "Batería", "correcta": false},
+          {"texto": "Saxofón", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador mexicano jugó en el Barcelona?",
+        "opciones": [
+          {"texto": "Rafael Márquez", "correcta": true},
+          {"texto": "Guillermo Ochoa", "correcta": false},
+          {"texto": "Hugo Sánchez", "correcta": false},
+          {"texto": "Carlos Vela", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué estadio es uno de los más grandes del mundo en México?",
+        "opciones": [
+          {"texto": "Estadio Azteca", "correcta": true},
+          {"texto": "Estadio BBVA", "correcta": false},
+          {"texto": "Estadio Akron", "correcta": false},
+          {"texto": "Estadio Cuauhtémoc", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué celebración mexicana honra a los muertos?",
+        "opciones": [
+          {"texto": "Día de Muertos", "correcta": true},
+          {"texto": "Navidad", "correcta": false},
+          {"texto": "Independencia", "correcta": false},
+          {"texto": "Semana Santa", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador mexicano es portero famoso?",
+        "opciones": [
+          {"texto": "Guillermo Ochoa", "correcta": true},
+          {"texto": "Raúl Jiménez", "correcta": false},
+          {"texto": "Lozano", "correcta": false},
+          {"texto": "Guardado", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué platillo mexicano lleva tortilla y carne?",
+        "opciones": [
+          {"texto": "Taco", "correcta": true},
+          {"texto": "Sushi", "correcta": false},
+          {"texto": "Pizza", "correcta": false},
+          {"texto": "Paella", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué civilización construyó Teotihuacán?",
+        "opciones": [
+          {"texto": "Teotihuacana", "correcta": true},
+          {"texto": "Azteca", "correcta": false},
+          {"texto": "Maya", "correcta": false},
+          {"texto": "Olmeca", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo regional juega México regularmente?",
+        "opciones": [
+          {"texto": "Copa Oro", "correcta": true},
+          {"texto": "Eurocopa", "correcta": false},
+          {"texto": "Copa África", "correcta": false},
+          {"texto": "Copa Asia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué bebida tradicional mexicana se hace con agave?",
+        "opciones": [
+          {"texto": "Tequila", "correcta": true},
+          {"texto": "Ron", "correcta": false},
+          {"texto": "Vodka", "correcta": false},
+          {"texto": "Whisky", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador mexicano juega en el AC Milan actualmente (aprox)?",
+        "opciones": [
+          {"texto": "Santiago Giménez", "correcta": true},
+          {"texto": "Vela", "correcta": false},
+          {"texto": "Chicharito", "correcta": false},
+          {"texto": "Herrera", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué estado es famoso por el mariachi?",
+        "opciones": [
+          {"texto": "Jalisco", "correcta": true},
+          {"texto": "Yucatán", "correcta": false},
+          {"texto": "Chiapas", "correcta": false},
+          {"texto": "Sonora", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué número llevaba Hugo Sánchez en el Real Madrid?",
+        "opciones": [
+          {"texto": "9", "correcta": true},
+          {"texto": "7", "correcta": false},
+          {"texto": "10", "correcta": false},
+          {"texto": "11", "correcta": false}
+        ]
       }
     ],
     "espana": [
@@ -128,8 +281,161 @@
           {"texto": "Flamenco", "correcta": false},
           {"texto": "Fallas", "correcta": false}
         ]
+      },
+      {
+        "pregunta": "¿Qué portero fue clave en el Mundial 2010?",
+        "opciones": [
+          {"texto": "Iker Casillas", "correcta": true},
+          {"texto": "David De Gea", "correcta": false},
+          {"texto": "Víctor Valdés", "correcta": false},
+          {"texto": "Pepe Reina", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué festival español es famoso por lanzar tomates?",
+        "opciones": [
+          {"texto": "La Tomatina", "correcta": true},
+          {"texto": "San Fermín", "correcta": false},
+          {"texto": "Fallas", "correcta": false},
+          {"texto": "Feria de Abril", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué club es rival histórico del Real Madrid?",
+        "opciones": [
+          {"texto": "Barcelona", "correcta": true},
+          {"texto": "Valencia", "correcta": false},
+          {"texto": "Sevilla", "correcta": false},
+          {"texto": "Betis", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué idioma además del español es oficial en Cataluña?",
+        "opciones": [
+          {"texto": "Catalán", "correcta": true},
+          {"texto": "Gallego", "correcta": false},
+          {"texto": "Euskera", "correcta": false},
+          {"texto": "Francés", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Quién ganó el Balón de Oro español en 1960?",
+        "opciones": [
+          {"texto": "Luis Suárez", "correcta": true},
+          {"texto": "Raúl", "correcta": false},
+          {"texto": "Xavi", "correcta": false},
+          {"texto": "Iniesta", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué plato lleva arroz, mariscos o carne?",
+        "opciones": [
+          {"texto": "Gazpacho", "correcta": false},
+          {"texto": "Tortilla", "correcta": false},
+          {"texto": "Churros", "correcta": false},
+          {"texto": "Paella", "correcta": true}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo europeo ganó España en 2008?",
+        "opciones": [
+          {"texto": "Eurocopa", "correcta": true},
+          {"texto": "Mundial", "correcta": false},
+          {"texto": "Nations League", "correcta": false},
+          {"texto": "Copa América", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es la capital de España?",
+        "opciones": [
+          {"texto": "Madrid", "correcta": true},
+          {"texto": "Barcelona", "correcta": false},
+          {"texto": "Sevilla", "correcta": false},
+          {"texto": "Valencia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador marcó el gol en la final del Mundial 2010?",
+        "opciones": [
+          {"texto": "Iniesta", "correcta": true},
+          {"texto": "Xavi", "correcta": false},
+          {"texto": "Torres", "correcta": false},
+          {"texto": "Villa", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué equipo juega en el Camp Nou?",
+        "opciones": [
+          {"texto": "Barcelona", "correcta": true},
+          {"texto": "Real Madrid", "correcta": false},
+          {"texto": "Valencia", "correcta": false},
+          {"texto": "Sevilla", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué bebida es típica de España?",
+        "opciones": [
+          {"texto": "Sangría", "correcta": true},
+          {"texto": "Tequila", "correcta": false},
+          {"texto": "Sake", "correcta": false},
+          {"texto": "Mate", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué fiesta incluye correr con toros?",
+        "opciones": [
+          {"texto": "San Fermín", "correcta": true},
+          {"texto": "Fallas", "correcta": false},
+          {"texto": "Tomatina", "correcta": false},
+          {"texto": "Carnaval", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador es histórico del Barcelona?",
+        "opciones": [
+          {"texto": "Xavi", "correcta": true},
+          {"texto": "Ronaldo", "correcta": false},
+          {"texto": "Mbappé", "correcta": false},
+          {"texto": "Rooney", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color usa España normalmente?",
+        "opciones": [
+          {"texto": "Rojo", "correcta": true},
+          {"texto": "Azul", "correcta": false},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Negro", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué región es famosa por el flamenco?",
+        "opciones": [
+          {"texto": "Andalucía", "correcta": true},
+          {"texto": "Galicia", "correcta": false},
+          {"texto": "Cataluña", "correcta": false},
+          {"texto": "Madrid", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo ganó España en 2012?",
+        "opciones": [
+          {"texto": "Eurocopa", "correcta": true},
+          {"texto": "Mundial", "correcta": false},
+          {"texto": "Copa América", "correcta": false},
+          {"texto": "Nations League", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué museo famoso está en Madrid?",
+        "opciones": [
+          {"texto": "Museo del Prado", "correcta": true},
+          {"texto": "Louvre", "correcta": false},
+          {"texto": "MoMA", "correcta": false},
+          {"texto": "British Museum", "correcta": false}
+        ]
       }
-    ],
+        ],
     "uruguay": [
       {
         "pregunta": "¿Cuántos mundiales ha ganado Uruguay?",
@@ -156,6 +462,159 @@
           {"texto": "El Gol Eterno", "correcta": false},
           {"texto": "La Final del Siglo", "correcta": false},
           {"texto": "El Maracanazo", "correcta": true}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador uruguayo mordió a un rival en un Mundial?",
+        "opciones": [
+          {"texto": "Luis Suárez", "correcta": true},
+          {"texto": "Cavani", "correcta": false},
+          {"texto": "Forlán", "correcta": false},
+          {"texto": "Godín", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué estadio es el principal de Uruguay?",
+        "opciones": [
+          {"texto": "Centenario", "correcta": true},
+          {"texto": "Maracaná", "correcta": false},
+          {"texto": "Monumental", "correcta": false},
+          {"texto": "Azteca", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué carne es típica en Uruguay?",
+        "opciones": [
+          {"texto": "Asado", "correcta": true},
+          {"texto": "Pollo frito", "correcta": false},
+          {"texto": "Pescado crudo", "correcta": false},
+          {"texto": "Cerdo agridulce", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador ganó el Balón de Oro del Mundial 2010?",
+        "opciones": [
+          {"texto": "Diego Forlán", "correcta": true},
+          {"texto": "Messi", "correcta": false},
+          {"texto": "Xavi", "correcta": false},
+          {"texto": "Sneijder", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué río limita con Argentina?",
+        "opciones": [
+          {"texto": "Río de la Plata", "correcta": true},
+          {"texto": "Amazonas", "correcta": false},
+          {"texto": "Orinoco", "correcta": false},
+          {"texto": "Paraná", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué bebida caliente es muy popular?",
+        "opciones": [
+          {"texto": "Mate", "correcta": true},
+          {"texto": "Café latte", "correcta": false},
+          {"texto": "Té verde", "correcta": false},
+          {"texto": "Chocolate", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color representa a Uruguay?",
+        "opciones": [
+          {"texto": "Celeste", "correcta": true},
+          {"texto": "Rojo", "correcta": false},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Negro", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué club uruguayo es uno de los más grandes?",
+        "opciones": [
+          {"texto": "Peñarol", "correcta": true},
+          {"texto": "Boca Juniors", "correcta": false},
+          {"texto": "River Plate", "correcta": false},
+          {"texto": "Colo-Colo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué otro club importante es rival de Peñarol?",
+        "opciones": [
+          {"texto": "Nacional", "correcta": true},
+          {"texto": "Flamengo", "correcta": false},
+          {"texto": "Palmeiras", "correcta": false},
+          {"texto": "Liga de Quito", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador uruguayo jugó en el PSG?",
+        "opciones": [
+          {"texto": "Edinson Cavani", "correcta": true},
+          {"texto": "Luis Suárez", "correcta": false},
+          {"texto": "Forlán", "correcta": false},
+          {"texto": "Godín", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cuál es la capital de Uruguay?",
+        "opciones": [
+          {"texto": "Montevideo", "correcta": true},
+          {"texto": "Asunción", "correcta": false},
+          {"texto": "Lima", "correcta": false},
+          {"texto": "Quito", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué baile es típico en Uruguay?",
+        "opciones": [
+          {"texto": "Candombe", "correcta": true},
+          {"texto": "Samba", "correcta": false},
+          {"texto": "Flamenco", "correcta": false},
+          {"texto": "Cumbia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo continental ha ganado Uruguay?",
+        "opciones": [
+          {"texto": "Copa América", "correcta": true},
+          {"texto": "Eurocopa", "correcta": false},
+          {"texto": "Copa África", "correcta": false},
+          {"texto": "Copa Asia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué posición jugaba Diego Godín?",
+        "opciones": [
+          {"texto": "Defensa", "correcta": true},
+          {"texto": "Delantero", "correcta": false},
+          {"texto": "Portero", "correcta": false},
+          {"texto": "Mediocampista", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué océano tiene Uruguay cerca?",
+        "opciones": [
+          {"texto": "Atlántico", "correcta": true},
+          {"texto": "Pacífico", "correcta": false},
+          {"texto": "Índico", "correcta": false},
+          {"texto": "Ártico", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué número usaba Luis Suárez frecuentemente?",
+        "opciones": [
+          {"texto": "9", "correcta": true},
+          {"texto": "10", "correcta": false},
+          {"texto": "7", "correcta": false},
+          {"texto": "11", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué apodo tiene la selección uruguaya?",
+        "opciones": [
+          {"texto": "La Celeste", "correcta": true},
+          {"texto": "La Roja", "correcta": false},
+          {"texto": "La Verde", "correcta": false},
+          {"texto": "Los Gauchos", "correcta": false}
         ]
       }
     ],
@@ -186,6 +645,159 @@
           {"texto": "Dojang", "correcta": false},
           {"texto": "Hanok", "correcta": true}
         ]
+      },
+      {
+        "pregunta": "¿Qué jugador coreano jugó en el Tottenham?",
+        "opciones": [
+          {"texto": "Son Heung-min", "correcta": true},
+          {"texto": "Park Ji-sung", "correcta": false},
+          {"texto": "Lee Kang-in", "correcta": false},
+          {"texto": "Kim Min-jae", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué empresa tecnológica es de Corea del Sur?",
+        "opciones": [
+          {"texto": "Samsung", "correcta": true},
+          {"texto": "Sony", "correcta": false},
+          {"texto": "Huawei", "correcta": false},
+          {"texto": "Apple", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué arte marcial es originario de Corea?",
+        "opciones": [
+          {"texto": "Taekwondo", "correcta": true},
+          {"texto": "Karate", "correcta": false},
+          {"texto": "Judo", "correcta": false},
+          {"texto": "Kung Fu", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué actor coreano protagonizó 'Parasite'?",
+        "opciones": [
+          {"texto": "Song Kang-ho", "correcta": true},
+          {"texto": "Lee Min-ho", "correcta": false},
+          {"texto": "Cha Eun Woo", "correcta": false},
+          {"texto": "Gong Yoo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué Mundial organizó Corea junto a Japón?",
+        "opciones": [
+          {"texto": "2002", "correcta": true},
+          {"texto": "2006", "correcta": false},
+          {"texto": "2010", "correcta": false},
+          {"texto": "1998", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué moneda usa Corea del Sur?",
+        "opciones": [
+          {"texto": "Won", "correcta": true},
+          {"texto": "Yen", "correcta": false},
+          {"texto": "Dólar", "correcta": false},
+          {"texto": "Peso", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color es común en su bandera?",
+        "opciones": [
+          {"texto": "Rojo y azul", "correcta": true},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Amarillo", "correcta": false},
+          {"texto": "Morado", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué capital tiene Corea del Sur?",
+        "opciones": [
+          {"texto": "Seúl", "correcta": true},
+          {"texto": "Busan", "correcta": false},
+          {"texto": "Incheon", "correcta": false},
+          {"texto": "Daegu", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué grupo musical es famoso mundialmente?",
+        "opciones": [
+          {"texto": "BTS", "correcta": true},
+          {"texto": "Blackpink", "correcta": false},
+          {"texto": "New Jeans", "correcta": false},
+          {"texto": "TWICE", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué comida coreana es picante y fermentada?",
+        "opciones": [
+          {"texto": "Kimchi", "correcta": true},
+          {"texto": "Sushi", "correcta": false},
+          {"texto": "Ramen", "correcta": false},
+          {"texto": "Tempura", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué selección eliminó a Corea en 2002 semifinal?",
+        "opciones": [
+          {"texto": "Alemania", "correcta": true},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "Italia", "correcta": false},
+          {"texto": "España", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué moneda usan?",
+        "opciones": [
+          {"texto": "Won", "correcta": true},
+          {"texto": "Yen", "correcta": false},
+          {"texto": "Peso", "correcta": false},
+          {"texto": "Dólar", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color es común en su uniforme?",
+        "opciones": [
+          {"texto": "Rojo", "correcta": true},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Azul", "correcta": false},
+          {"texto": "Negro", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es famosa por su puerto?",
+        "opciones": [
+          {"texto": "Busan", "correcta": true},
+          {"texto": "Seúl", "correcta": false},
+          {"texto": "Incheon", "correcta": false},
+          {"texto": "Daegu", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte es popular además del fútbol?",
+        "opciones": [
+          {"texto": "Béisbol", "correcta": true},
+          {"texto": "Rugby", "correcta": false},
+          {"texto": "Hockey", "correcta": false},
+          {"texto": "Golf", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué empresa de autos es coreana?",
+        "opciones": [
+          {"texto": "Kia", "correcta": true},
+          {"texto": "Toyota", "correcta": false},
+          {"texto": "Ford", "correcta": false},
+          {"texto": "BMW", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué país comparte península con Corea del Sur?",
+        "opciones": [
+          {"texto": "Corea del Norte", "correcta": true},
+          {"texto": "China", "correcta": false},
+          {"texto": "Japón", "correcta": false},
+          {"texto": "Vietnam", "correcta": false}
+        ]
       }
     ],
     "japon": [
@@ -214,6 +826,159 @@
           {"texto": "Francia e Inglaterra", "correcta": false},
           {"texto": "Alemania y España", "correcta": true},
           {"texto": "Portugal y Países Bajos", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué empresa de videojuegos es japonesa?",
+        "opciones": [
+          {"texto": "Nintendo", "correcta": true},
+          {"texto": "Xbox", "correcta": false},
+          {"texto": "EA", "correcta": false},
+          {"texto": "Ubisoft", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué flor es símbolo de Japón?",
+        "opciones": [
+          {"texto": "Sakura", "correcta": true},
+          {"texto": "Rosa", "correcta": false},
+          {"texto": "Tulipán", "correcta": false},
+          {"texto": "Lirio", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué anime es muy famoso mundialmente?",
+        "opciones": [
+          {"texto": "Naruto", "correcta": true},
+          {"texto": "Frozen", "correcta": false},
+          {"texto": "Shrek", "correcta": false},
+          {"texto": "Toy Story", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador japonés jugó en el AC Milan?",
+        "opciones": [
+          {"texto": "Keisuke Honda", "correcta": true},
+          {"texto": "Kagawa", "correcta": false},
+          {"texto": "Nagatomo", "correcta": false},
+          {"texto": "Endo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué tren es famoso por su velocidad?",
+        "opciones": [
+          {"texto": "Shinkansen", "correcta": true},
+          {"texto": "Metro", "correcta": false},
+          {"texto": "Tranvía", "correcta": false},
+          {"texto": "AVE", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué volcán es famoso en Japón?",
+        "opciones": [
+          {"texto": "Monte Fuji", "correcta": true},
+          {"texto": "Everest", "correcta": false},
+          {"texto": "Kilimanjaro", "correcta": false},
+          {"texto": "Etna", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué selección eliminó Japón en 2022 en octavos?",
+        "opciones": [
+          {"texto": "Croacia", "correcta": true},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "España", "correcta": false},
+          {"texto": "Francia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad fue la antigua capital de Japón?",
+        "opciones": [
+          {"texto": "Kioto", "correcta": true},
+          {"texto": "Tokio", "correcta": false},
+          {"texto": "Osaka", "correcta": false},
+          {"texto": "Hiroshima", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué tipo de escritura usa Japón?",
+        "opciones": [
+          {"texto": "Kanji, Hiragana y Katakana", "correcta": true},
+          {"texto": "Solo Kanji", "correcta": false},
+          {"texto": "Alfabeto latino", "correcta": false},
+          {"texto": "Cirílico", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte profesional es muy popular en Japón además del fútbol?",
+        "opciones": [
+          {"texto": "Béisbol", "correcta": true},
+          {"texto": "Rugby", "correcta": false},
+          {"texto": "Críquet", "correcta": false},
+          {"texto": "Hockey", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué evento natural afecta frecuentemente a Japón?",
+        "opciones": [
+          {"texto": "Terremotos", "correcta": true},
+          {"texto": "Huracanes", "correcta": false},
+          {"texto": "Tornados", "correcta": false},
+          {"texto": "Nevadas extremas", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador japonés jugó en el Manchester United?",
+        "opciones": [
+          {"texto": "Shinji Kagawa", "correcta": true},
+          {"texto": "Honda", "correcta": false},
+          {"texto": "Nagatomo", "correcta": false},
+          {"texto": "Endo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué tecnología japonesa es famosa?",
+        "opciones": [
+          {"texto": "Robótica", "correcta": true},
+          {"texto": "Minería", "correcta": false},
+          {"texto": "Agricultura", "correcta": false},
+          {"texto": "Textil", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué comida japonesa es sopa con fideos?",
+        "opciones": [
+          {"texto": "Ramen", "correcta": true},
+          {"texto": "Sushi", "correcta": false},
+          {"texto": "Tempura", "correcta": false},
+          {"texto": "Onigiri", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué isla es la más al norte de Japón?",
+        "opciones": [
+          {"texto": "Hokkaido", "correcta": true},
+          {"texto": "Honshu", "correcta": false},
+          {"texto": "Kyushu", "correcta": false},
+          {"texto": "Shikoku", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador japonés es famoso por jugar en Alemania?",
+        "opciones": [
+          {"texto": "Shinji Okazaki", "correcta": true},
+          {"texto": "Honda", "correcta": false},
+          {"texto": "Kagawa", "correcta": false},
+          {"texto": "Mitoma", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué evento deportivo organizó Japón en 2021?",
+        "opciones": [
+          {"texto": "Juegos Olímpicos", "correcta": true},
+          {"texto": "Mundial", "correcta": false},
+          {"texto": "Eurocopa", "correcta": false},
+          {"texto": "Copa América", "correcta": false}
         ]
       }
     ],
@@ -244,6 +1009,159 @@
           {"texto": "Cartago", "correcta": false},
           {"texto": "Monastir", "correcta": false}
         ]
+      },   
+      {
+        "pregunta": "¿Cuál es la capital de Túnez?",
+        "opciones": [
+          {"texto": "Túnez", "correcta": true},
+          {"texto": "Sfax", "correcta": false},
+          {"texto": "Cartago", "correcta": false},
+          {"texto": "Monastir", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cómo se conoce a la selección de Túnez?",
+        "opciones": [
+          {"texto": "Las Águilas de Cartago", "correcta": true},
+          {"texto": "Los Leones del Atlas", "correcta": false},
+          {"texto": "Los Faraones", "correcta": false},
+          {"texto": "Los Elefantes", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué desierto cubre gran parte de Túnez?",
+        "opciones": [
+          {"texto": "Sahara", "correcta": true},
+          {"texto": "Gobi", "correcta": false},
+          {"texto": "Atacama", "correcta": false},
+          {"texto": "Kalahari", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿En qué continente se encuentra Túnez?",
+        "opciones": [
+          {"texto": "África", "correcta": true},
+          {"texto": "Asia", "correcta": false},
+          {"texto": "Europa", "correcta": false},
+          {"texto": "Oceanía", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué plato es típico en Túnez?",
+        "opciones": [
+          {"texto": "Cuscús", "correcta": true},
+          {"texto": "Sushi", "correcta": false},
+          {"texto": "Tacos", "correcta": false},
+          {"texto": "Paella", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cuál es el color predominante en la bandera de Túnez?",
+        "opciones": [
+          {"texto": "Rojo", "correcta": true},
+          {"texto": "Azul", "correcta": false},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Amarillo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cuántas veces ha participado Túnez en un Mundial?",
+        "opciones": [
+          {"texto": "Más de 5", "correcta": true},
+          {"texto": "1", "correcta": false},
+          {"texto": "2", "correcta": false},
+          {"texto": "Nunca", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué mar baña las costas de Túnez?",
+        "opciones": [
+          {"texto": "Mar Mediterráneo", "correcta": true},
+          {"texto": "Océano Atlántico", "correcta": false},
+          {"texto": "Mar Rojo", "correcta": false},
+          {"texto": "Mar Negro", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué antigua civilización estuvo en Cartago?",
+        "opciones": [
+          {"texto": "Fenicia", "correcta": true},
+          {"texto": "Egipcia", "correcta": false},
+          {"texto": "Romana", "correcta": false},
+          {"texto": "Griega", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué idioma se habla principalmente en Túnez?",
+        "opciones": [
+          {"texto": "Árabe", "correcta": true},
+          {"texto": "Francés", "correcta": false},
+          {"texto": "Inglés", "correcta": false},
+          {"texto": "Italiano", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color tiene la luna en la bandera de Túnez?",
+        "opciones": [
+          {"texto": "Blanco", "correcta": true},
+          {"texto": "Rojo", "correcta": false},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Azul", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad fue importante en la historia romana en Túnez?",
+        "opciones": [
+          {"texto": "Cartago", "correcta": true},
+          {"texto": "Roma", "correcta": false},
+          {"texto": "Atenas", "correcta": false},
+          {"texto": "Alejandría", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué posición suele destacar en la selección tunecina?",
+        "opciones": [
+          {"texto": "Defensa", "correcta": true},
+          {"texto": "Portero", "correcta": false},
+          {"texto": "Delantero", "correcta": false},
+          {"texto": "Extremo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué torneo continental juega Túnez?",
+        "opciones": [
+          {"texto": "Copa Africana de Naciones", "correcta": true},
+          {"texto": "Eurocopa", "correcta": false},
+          {"texto": "Copa América", "correcta": false},
+          {"texto": "Copa Asia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué clima predomina en Túnez?",
+        "opciones": [
+          {"texto": "Desértico", "correcta": true},
+          {"texto": "Tropical", "correcta": false},
+          {"texto": "Polar", "correcta": false},
+          {"texto": "Alpino", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué país colonizó Túnez antes de su independencia?",
+        "opciones": [
+          {"texto": "Francia", "correcta": true},
+          {"texto": "España", "correcta": false},
+          {"texto": "Italia", "correcta": false},
+          {"texto": "Reino Unido", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué símbolo aparece en la bandera de Túnez?",
+        "opciones": [
+          {"texto": "Media luna y estrella", "correcta": true},
+          {"texto": "Águila", "correcta": false},
+          {"texto": "León", "correcta": false},
+          {"texto": "Sol", "correcta": false}
+        ]
       }
     ],
     "sudafrica": [
@@ -272,6 +1190,159 @@
           {"texto": "Monte Kilimanjaro", "correcta": false},
           {"texto": "Cuna de la Humanidad", "correcta": true},
           {"texto": "Desierto del Kalahari", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cuál es una de las capitales de Sudáfrica?",
+        "opciones": [
+          {"texto": "Pretoria", "correcta": true},
+          {"texto": "Nairobi", "correcta": false},
+          {"texto": "Lagos", "correcta": false},
+          {"texto": "El Cairo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué instrumento se hizo famoso en el Mundial 2010?",
+        "opciones": [
+          {"texto": "Vuvuzela", "correcta": true},
+          {"texto": "Tambor", "correcta": false},
+          {"texto": "Guitarra", "correcta": false},
+          {"texto": "Flauta", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué animal es símbolo de Sudáfrica?",
+        "opciones": [
+          {"texto": "León", "correcta": true},
+          {"texto": "Tigre", "correcta": false},
+          {"texto": "Oso", "correcta": false},
+          {"texto": "Lobo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué famoso líder sudafricano luchó contra el apartheid?",
+        "opciones": [
+          {"texto": "Nelson Mandela", "correcta": true},
+          {"texto": "Desmond Tutu", "correcta": false},
+          {"texto": "Kofi Annan", "correcta": false},
+          {"texto": "Haile Selassie", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿En qué continente está Sudáfrica?",
+        "opciones": [
+          {"texto": "África", "correcta": true},
+          {"texto": "Europa", "correcta": false},
+          {"texto": "Asia", "correcta": false},
+          {"texto": "América", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué océano baña las costas de Sudáfrica?",
+        "opciones": [
+          {"texto": "Atlántico e Índico", "correcta": true},
+          {"texto": "Pacífico", "correcta": false},
+          {"texto": "Ártico", "correcta": false},
+          {"texto": "Antártico", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte además del fútbol es popular en Sudáfrica?",
+        "opciones": [
+          {"texto": "Rugby", "correcta": true},
+          {"texto": "Béisbol", "correcta": false},
+          {"texto": "Críquet", "correcta": false},
+          {"texto": "Hockey hielo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Cuál es otra capital de Sudáfrica?",
+        "opciones": [
+          {"texto": "Ciudad del Cabo", "correcta": true},
+          {"texto": "Lagos", "correcta": false},
+          {"texto": "Accra", "correcta": false},
+          {"texto": "Nairobi", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué idioma es oficial en Sudáfrica?",
+        "opciones": [
+          {"texto": "Inglés", "correcta": true},
+          {"texto": "Español", "correcta": false},
+          {"texto": "Portugués", "correcta": false},
+          {"texto": "Árabe", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué famoso parque nacional está en Sudáfrica?",
+        "opciones": [
+          {"texto": "Kruger", "correcta": true},
+          {"texto": "Yellowstone", "correcta": false},
+          {"texto": "Serengeti", "correcta": false},
+          {"texto": "Amazonas", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué selección ganó el Mundial 2010?",
+        "opciones": [
+          {"texto": "España", "correcta": true},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "Alemania", "correcta": false},
+          {"texto": "Argentina", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué animal es común en safaris?",
+        "opciones": [
+          {"texto": "Elefante", "correcta": true},
+          {"texto": "Oso", "correcta": false},
+          {"texto": "Lobo", "correcta": false},
+          {"texto": "Canguro", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte ganó Sudáfrica mundialmente?",
+        "opciones": [
+          {"texto": "Rugby", "correcta": true},
+          {"texto": "Béisbol", "correcta": false},
+          {"texto": "Fútbol", "correcta": false},
+          {"texto": "Tenis", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué cabo famoso está en Sudáfrica?",
+        "opciones": [
+          {"texto": "Buena Esperanza", "correcta": true},
+          {"texto": "Hornos", "correcta": false},
+          {"texto": "Finisterre", "correcta": false},
+          {"texto": "Verde", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color NO está en su bandera?",
+        "opciones": [
+          {"texto": "Morado", "correcta": true},
+          {"texto": "Verde", "correcta": false},
+          {"texto": "Rojo", "correcta": false},
+          {"texto": "Azul", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es turística en Sudáfrica?",
+        "opciones": [
+          {"texto": "Ciudad del Cabo", "correcta": true},
+          {"texto": "Tokio", "correcta": false},
+          {"texto": "Roma", "correcta": false},
+          {"texto": "París", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué moneda usa Sudáfrica?",
+        "opciones": [
+          {"texto": "Rand", "correcta": true},
+          {"texto": "Peso", "correcta": false},
+          {"texto": "Dólar", "correcta": false},
+          {"texto": "Euro", "correcta": false}
         ]
       }
     ],
@@ -302,8 +1373,161 @@
           {"texto": "James Rodríguez", "correcta": true},
           {"texto": "Teófilo Gutiérrez", "correcta": false}
         ]
+      },
+      {
+        "pregunta": "¿Cuál es la capital de Colombia?",
+        "opciones": [
+          {"texto": "Bogotá", "correcta": true},
+          {"texto": "Medellín", "correcta": false},
+          {"texto": "Cali", "correcta": false},
+          {"texto": "Barranquilla", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué baile es típico de Colombia?",
+        "opciones": [
+          {"texto": "Cumbia", "correcta": true},
+          {"texto": "Flamenco", "correcta": false},
+          {"texto": "Tango", "correcta": false},
+          {"texto": "Samba", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador colombiano es conocido como 'El Tigre'?",
+        "opciones": [
+          {"texto": "Radamel Falcao", "correcta": true},
+          {"texto": "James Rodríguez", "correcta": false},
+          {"texto": "Cuadrado", "correcta": false},
+          {"texto": "Bacca", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué producto colombiano es famoso mundialmente?",
+        "opciones": [
+          {"texto": "Café", "correcta": true},
+          {"texto": "Té", "correcta": false},
+          {"texto": "Cacao", "correcta": false},
+          {"texto": "Azúcar", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué colores tiene la bandera de Colombia?",
+        "opciones": [
+          {"texto": "Amarillo, azul y rojo", "correcta": true},
+          {"texto": "Rojo y blanco", "correcta": false},
+          {"texto": "Verde y amarillo", "correcta": false},
+          {"texto": "Azul y blanco", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es famosa por la Feria de las Flores?",
+        "opciones": [
+          {"texto": "Medellín", "correcta": true},
+          {"texto": "Bogotá", "correcta": false},
+          {"texto": "Cali", "correcta": false},
+          {"texto": "Cartagena", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué selección eliminó a Colombia en 2014?",
+        "opciones": [
+          {"texto": "Brasil", "correcta": true},
+          {"texto": "Alemania", "correcta": false},
+          {"texto": "Argentina", "correcta": false},
+          {"texto": "Francia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué selección eliminó a Colombia en 2018?",
+        "opciones": [
+          {"texto": "Inglaterra", "correcta": true},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "Francia", "correcta": false},
+          {"texto": "Alemania", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es famosa por su carnaval?",
+        "opciones": [
+          {"texto": "Barranquilla", "correcta": true},
+          {"texto": "Bogotá", "correcta": false},
+          {"texto": "Cali", "correcta": false},
+          {"texto": "Medellín", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué jugador colombiano jugó en el Real Madrid?",
+        "opciones": [
+          {"texto": "James Rodríguez", "correcta": true},
+          {"texto": "Falcao", "correcta": false},
+          {"texto": "Cuadrado", "correcta": false},
+          {"texto": "Bacca", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte es popular además del fútbol?",
+        "opciones": [
+          {"texto": "Ciclismo", "correcta": true},
+          {"texto": "Hockey", "correcta": false},
+          {"texto": "Rugby", "correcta": false},
+          {"texto": "Golf", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué océano tiene Colombia?",
+        "opciones": [
+          {"texto": "Atlántico y Pacífico", "correcta": true},
+          {"texto": "Solo Atlántico", "correcta": false},
+          {"texto": "Solo Pacífico", "correcta": false},
+          {"texto": "Ninguno", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué fruta tropical es famosa?",
+        "opciones": [
+          {"texto": "Banano", "correcta": true},
+          {"texto": "Manzana", "correcta": false},
+          {"texto": "Pera", "correcta": false},
+          {"texto": "Durazno", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué río importante pasa por Colombia?",
+        "opciones": [
+          {"texto": "Magdalena", "correcta": true},
+          {"texto": "Nilo", "correcta": false},
+          {"texto": "Danubio", "correcta": false},
+          {"texto": "Yangtsé", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué apodo tiene la selección colombiana?",
+        "opciones": [
+          {"texto": "Los Cafeteros", "correcta": true},
+          {"texto": "La Roja", "correcta": false},
+          {"texto": "La Celeste", "correcta": false},
+          {"texto": "Los Guerreros", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué baile es famoso en Cali?",
+        "opciones": [
+          {"texto": "Salsa", "correcta": true},
+          {"texto": "Tango", "correcta": false},
+          {"texto": "Flamenco", "correcta": false},
+          {"texto": "Vals", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué color predomina en su uniforme?",
+        "opciones": [
+          {"texto": "Amarillo", "correcta": true},
+          {"texto": "Azul", "correcta": false},
+          {"texto": "Rojo", "correcta": false},
+          {"texto": "Verde", "correcta": false}
+        ]
       }
-    ],
+        ],
     "uzbekistan": [
       {
         "pregunta": "¿Cuál es el apodo de Uzbekistán?",
@@ -331,7 +1555,161 @@
           {"texto": "CONMEBOL", "correcta": false},
           {"texto": "CAF", "correcta": false}
         ]
+      },
+      {
+        "pregunta": "¿Cuál es la capital de Uzbekistán?",
+        "opciones": [
+          {"texto": "Taskent", "correcta": true},
+          {"texto": "Samarcanda", "correcta": false},
+          {"texto": "Bujará", "correcta": false},
+          {"texto": "Andiján", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿En qué continente se encuentra Uzbekistán?",
+        "opciones": [
+          {"texto": "Asia", "correcta": true},
+          {"texto": "Europa", "correcta": false},
+          {"texto": "África", "correcta": false},
+          {"texto": "Oceanía", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué antigua ruta comercial pasaba por Uzbekistán?",
+        "opciones": [
+          {"texto": "Ruta de la Seda", "correcta": true},
+          {"texto": "Ruta del Oro", "correcta": false},
+          {"texto": "Ruta del Ámbar", "correcta": false},
+          {"texto": "Ruta del Té", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es famosa por su arquitectura histórica?",
+        "opciones": [
+          {"texto": "Samarcanda", "correcta": true},
+          {"texto": "Taskent", "correcta": false},
+          {"texto": "Berlín", "correcta": false},
+          {"texto": "Moscú", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte es popular en Uzbekistán?",
+        "opciones": [
+          {"texto": "Fútbol", "correcta": true},
+          {"texto": "Béisbol", "correcta": false},
+          {"texto": "Hockey hielo", "correcta": false},
+          {"texto": "Rugby", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué colores tiene la bandera de Uzbekistán?",
+        "opciones": [
+          {"texto": "Azul, blanco y verde", "correcta": true},
+          {"texto": "Rojo y negro", "correcta": false},
+          {"texto": "Amarillo y azul", "correcta": false},
+          {"texto": "Verde y rojo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué moneda se usa en Uzbekistán?",
+        "opciones": [
+          {"texto": "Som", "correcta": true},
+          {"texto": "Rublo", "correcta": false},
+          {"texto": "Yen", "correcta": false},
+          {"texto": "Peso", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es Patrimonio de la Humanidad?",
+        "opciones": [
+          {"texto": "Samarcanda", "correcta": true},
+          {"texto": "París", "correcta": false},
+          {"texto": "Roma", "correcta": false},
+          {"texto": "Londres", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué religión es mayoritaria?",
+        "opciones": [
+          {"texto": "Islam", "correcta": true},
+          {"texto": "Cristianismo", "correcta": false},
+          {"texto": "Budismo", "correcta": false},
+          {"texto": "Hinduismo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué idioma se habla?",
+        "opciones": [
+          {"texto": "Uzbeko", "correcta": true},
+          {"texto": "Ruso", "correcta": false},
+          {"texto": "Chino", "correcta": false},
+          {"texto": "Árabe", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué tipo de clima predomina?",
+        "opciones": [
+          {"texto": "Seco continental", "correcta": true},
+          {"texto": "Tropical", "correcta": false},
+          {"texto": "Polar", "correcta": false},
+          {"texto": "Mediterráneo", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte olímpico destaca Uzbekistán?",
+        "opciones": [
+          {"texto": "Boxeo", "correcta": true},
+          {"texto": "Natación", "correcta": false},
+          {"texto": "Tenis", "correcta": false},
+          {"texto": "Golf", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué mar cercano se ha reducido mucho?",
+        "opciones": [
+          {"texto": "Mar de Aral", "correcta": true},
+          {"texto": "Mar Negro", "correcta": false},
+          {"texto": "Mar Rojo", "correcta": false},
+          {"texto": "Mar Caspio", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué deporte es el más popular?",
+        "opciones": [
+          {"texto": "Fútbol", "correcta": true},
+          {"texto": "Béisbol", "correcta": false},
+          {"texto": "Hockey", "correcta": false},
+          {"texto": "Rugby", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué país limita con Uzbekistán?",
+        "opciones": [
+          {"texto": "Kazajistán", "correcta": true},
+          {"texto": "España", "correcta": false},
+          {"texto": "Brasil", "correcta": false},
+          {"texto": "Italia", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué símbolo aparece en su bandera?",
+        "opciones": [
+          {"texto": "Media luna", "correcta": true},
+          {"texto": "León", "correcta": false},
+          {"texto": "Águila", "correcta": false},
+          {"texto": "Sol", "correcta": false}
+        ]
+      },
+      {
+        "pregunta": "¿Qué ciudad es capital?",
+        "opciones": [
+          {"texto": "Taskent", "correcta": true},
+          {"texto": "Bujará", "correcta": false},
+          {"texto": "Samarcanda", "correcta": false},
+          {"texto": "Andiján", "correcta": false}
+        ]
       }
+      
     ]
   },
   "estadisticas": {

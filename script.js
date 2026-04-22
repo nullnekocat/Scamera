@@ -20,7 +20,7 @@ const Scamera = {
         'colombia': { 
             name: 'Colombia', 
             modelFile: 'tucanCol.glb', 
-            animName: 'tucanMove',
+            animName: 'Take 01',
             indices: [0, 1, 2],
             modelIds: ['modelo-ar-colombia-0', 'modelo-ar-colombia-1', 'modelo-ar-colombia-2'],
             video: 'Colombia.mp4'
@@ -239,6 +239,16 @@ const Scamera = {
         // No ocultamos el popup cuando se pierde el target
         // Solo se ocultará cuando se cambie de país o se detenga el escáner
         console.log(`⚠️ Target perdido: ${country} - Popup mantiene visible`);
+        const config = this.countryConfig[country];
+        if (!config) return;
+
+        config.modelIds.forEach(modelId => {
+            const modelElement = document.getElementById(modelId);
+            if (modelElement) {
+                const sparkles = modelElement.parentElement.querySelector(".sparkles-ar");
+                if (sparkles) sparkles.remove();
+            }
+        });
     },
 
     showARModel(country) {
@@ -255,12 +265,6 @@ const Scamera = {
                     console.log(`✅ Modelo ${modelId} mostrado para ${country}`);
                     // ✨ chispas mágicas
                     const sparkles = this.createMagicSparkles(modelElement);
-
-                    sparkles.setAttribute("visible", true);
-
-                    setTimeout(()=>{
-                        sparkles.setAttribute("visible", false);
-                    }, 1600);
 
                     const startAnimation = () => {
                     modelElement.removeAttribute('animation-mixer');
@@ -335,22 +339,25 @@ const Scamera = {
                 sparkle.setAttribute("animation__float",`
                     property: position;
                     to: ${(Math.random()-0.5)*0.6} ${1.2 + Math.random()*0.3} ${(Math.random()-0.5)*0.6};
-                    dur: ${1600 + Math.random()*900};
+                    dur: ${3000 + Math.random()*1500};
                     easing: easeOutCubic;
+                    loop: true;
                 `);
 
                 sparkle.setAttribute("animation__fade",`
                     property: material.opacity;
                     from: 1;
                     to: 0;
-                    dur: 1700;
+                    dur: 3200;
+                    loop: true;
                 `);
 
                 sparkle.setAttribute("animation__scale",`
                     property: scale;
                     from: 0.3 0.3 0.3;
                     to: 1.3 1.3 1.3;
-                    dur: 1700;
+                    dur: 3200;
+                    loop: true;
                 `);
 
                 sparkleContainer.appendChild(sparkle);
@@ -369,7 +376,7 @@ const Scamera = {
             property: scale;
             from: 0.2 0.2 0.2;
             to: 1.6 1.6 1.6;
-            dur: 1200;
+            dur: 2000;
             easing: easeOutQuad;
             `);
 
@@ -649,7 +656,59 @@ const Scamera = {
         }
 
         const dataCountry = this.currentCountry;
-        const triviaData = this.data.trivia?.[dataCountry];
+        
+        let triviaData = this.data.trivia?.[dataCountry];
+        if (!triviaData || triviaData.length === 0) {
+            container.innerHTML = '<p class="text-center">No hay trivia disponible para este país</p>';
+            return;
+        }
+        // RANDOMIZAR - inicializar historial si no existe
+        if (!this.usedQuestions) {
+            this.usedQuestions = {};
+        }
+        if (!this.usedQuestions[dataCountry]) {
+            this.usedQuestions[dataCountry] = [];
+        }
+        // agregar índice a preguntas
+        let preguntasConIndex = triviaData.map((q, i) => ({
+            ...q,
+            _index: i
+        }));
+        // filtrar las que NO han salido antes
+        let disponibles = preguntasConIndex.filter(
+            q => !this.usedQuestions[dataCountry].includes(q._index)
+        );
+        // si ya no hay suficientes, reiniciar historial
+        if (disponibles.length < 5) {
+            this.usedQuestions[dataCountry] = [];
+            disponibles = preguntasConIndex;
+        }
+        // mezclar
+        for (let i = disponibles.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [disponibles[i], disponibles[j]] = [disponibles[j], disponibles[i]];
+        }
+        //solo 5
+        let seleccionadas = disponibles.slice(0, 5);
+        //guardar usadas
+        this.usedQuestions[dataCountry].push(
+            ...seleccionadas.map(q => q._index)
+        );
+        // limpiar _index
+        triviaData = seleccionadas.map(({ _index, ...q }) => q);
+
+        // RANDOM RESPUESTAS
+        triviaData = triviaData.map(q => {
+            const opciones = [...q.opciones];
+
+            for (let i = opciones.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [opciones[i], opciones[j]] = [opciones[j], opciones[i]];
+            }
+
+            return { ...q, opciones };
+        });
+
         if (!triviaData || triviaData.length === 0) {
             container.innerHTML = '<p class="text-center">No hay trivia disponible para este país</p>';
             return;
